@@ -1,7 +1,23 @@
 body {
+    font-family: 'Inconsolata', monospace;
     background-color: rgb(48, 48, 48);
     color: white;
     text-align: center;
+}
+
+.score {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.question-container {
+    position: absolute;
+    top: 40%;
+    width: 100%
+}
+
+.question {
+    font-size: 28px;
 }
 
 .option {
@@ -11,4 +27,5 @@ body {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
+    margin: 20px 10px;;
 }
