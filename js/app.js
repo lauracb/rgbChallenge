@@ -1,4 +1,5 @@
 var correct;
+var score = 0
 
 // Inicializa el juego
 game();
@@ -23,9 +24,12 @@ function guess(){
   var index = $('.option').index(this)
   if (index === correct) {
     alert("Muy bien!!!");
+    score++;
   } else {
     alert("que mal");
+    score = 0;
   }
+  $('.score span').text(score);
 
   game();
 }
